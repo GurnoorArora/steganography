@@ -1,5 +1,4 @@
 import uuid
-import pixel 
 from PIL import Image
 def getpixels():
     img=Image.open(r"C:/Users/rahul/test.png");
@@ -7,10 +6,10 @@ def getpixels():
     height=img.size[0];
     width=img.size[1];
     total_pixels=height*width;
-    return height,width
+    return height,width,total_pixels
     
 
-total_pixels = pixel.total_pixels
+
 def get_mac_address():
     # Get the MAC address as an integer
     mac = uuid.getnode()
@@ -18,9 +17,9 @@ def get_mac_address():
 
 mac = get_mac_address()
 #total_pixels = getpixels()
-height,width=getpixels()
+height,width,total_pixels=getpixels()
 print("MAC Address:", get_mac_address())
-print("Total pixels: ",getpixels())
+print("Total pixels: ",total_pixels)
 
 key_position_height = mac%height
 key_position_width = mac%width
