@@ -17,10 +17,12 @@ for k in range (0,strlen):
     
     rand_pixel_height=random.randint(0,height-1)
     rand_pixel_width = random.randint(0,width-1)
-    rand_pixel = dict(ht=rand_pixel_height,wt=rand_pixel_width)
+    rand_pixel = dict(wt=rand_pixel_width,ht=rand_pixel_height)
+
     if rand_pixel in sel_pixels:
         k-=1
     else:
         sel_pixels.append(rand_pixel)
 
-print(sel_pixels)
+
+#print(sel_pixels)
