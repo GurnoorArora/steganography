@@ -23,14 +23,13 @@ for item in bin_RGB:
 print(RGB_dec)
 """
 # Example data
-pixel_updates = [
+sel_pixels = [
     {'x': 10, 'y': 20},
     {'x': 15, 'y': 25},
     {'x': 30, 'y': 35}
 ]
 
-
-rgb_values = [
+RGB_dec = [
     (255, 0, 0),  # Red
     (0, 255, 0),  # Green
     (0, 0, 255)   # Blue
