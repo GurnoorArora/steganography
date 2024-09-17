@@ -1,3 +1,5 @@
+#learning how to get the ip address of the system and convert it to an integer value
+
 import socket
 from PIL import Image
 
